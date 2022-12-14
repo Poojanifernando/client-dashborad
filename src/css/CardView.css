@@ -1,0 +1,20 @@
+.titlebar{
+    background-color: rgb(10, 236, 104);
+    height:70px;
+    align-items: center;
+    font-size:60px;
+}
+
+.valuebar{
+    border-radius: 10px;
+    height:70px;
+    align-items: center;
+    font-size:60px;
+}
+
+.cardborder{
+    border-radius:20px;
+    padding-bottom: 40px;
+ 
+
+}
