@@ -1,45 +1,58 @@
 import Card from 'react-bootstrap/Card';
 import "../css/CardView.css";
 import axios from 'axios';
-import {getAllcontrollerDetails} from '../Services/adminControllerService'
+import {getAlldeviceDetails} from '../Services/DeviceService';
 import {useEffect, useState} from 'react';
 
 
-const   CardView = () => {
+const   SubCardView = () => {
+
+
+
+
+
 
   const [admin_Control , setadmin_Control] = useState([]);
   
   const [device_Reg , setdevice_Reg] = useState([]);
   
     
-  const GetAll = async () =>{
+ /* const GetAll = async () =>{
     let data = await getAllcontrollerDetails();
     console.log("All ",data);
     setadmin_Control(data?.data?.content);
 }
   useEffect(() => { 
     GetAll();
- },[])
+ },[])*/
 
-
-  let getdevices = axios.get("http://localhost:8081/api/v1/devices/getAllDevice")
-  console.log(getdevices);
+const getAlldDetails = async () =>{
+  let data = await getAlldeviceDetails();
+  console.log("All ",data.data);
+  setdevice_Reg(data?.data?.content);
   
+}
+
+useEffect(() => { 
+  getAlldDetails();
+},[])
  
   return (
     <div>
    
 
-   {admin_Control?.map((admin_Control,index)=>{
-                          return(
+   
     
-
+   {device_Reg?.map((device_Reg,index)=>{
+                          return(
 
         <div>
     <Card style={{ width: '20rem' }}>
       <Card.Body>
         <center>
-        <Card.Title className = "titlebar"> {admin_Control?.parameterID_ad}</Card.Title>
+        <Card.Title > {device_Reg?.deviceID_dvcReg}</Card.Title>
+        <Card.Title className = "titlebar"> 
+        {device_Reg?.parameterType_dvcReg}</Card.Title>
         <Card.Text className = "valuebar">
        
         </Card.Text>
@@ -59,4 +72,4 @@ const   CardView = () => {
   );
 }
 
-export default CardView;
+export default SubCardView;
