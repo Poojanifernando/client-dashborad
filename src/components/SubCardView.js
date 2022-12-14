@@ -1,70 +1,53 @@
 import Card from 'react-bootstrap/Card';
-import "../css/CardView.css";
+import "../css/SubCardView.css";
 import axios from 'axios';
-import {getAlldeviceDetails} from '../Services/DeviceService';
+import {getAllcontrollerDetails} from '../Services/adminControllerService'
 import {useEffect, useState} from 'react';
 
 
-const   SubCardView = () => {
+const  SubCardView = () => {
 
-
-
-
-
-
-  const [admin_Control , setadmin_Control] = useState([]);
+  const [admin_Control , setadmin_Control] = useState([{"parameterID_ad":"title" , "disc": " 179"},{"parameterID_ad":"title" , "disc": " 179"},{"parameterID_ad":"title" , "disc": " 179"},{"parameterID_ad":"title" , "disc": " 179"}]);
   
   const [device_Reg , setdevice_Reg] = useState([]);
   
     
- /* const GetAll = async () =>{
-    let data = await getAllcontrollerDetails();
-    console.log("All ",data);
-    setadmin_Control(data?.data?.content);
-}
-  useEffect(() => { 
-    GetAll();
- },[])*/
+//   const GetAll = async () =>{
+//     let data = await getAllcontrollerDetails();
+//     console.log("All ",data);
+//     setadmin_Control(data?.data?.content);
+// }
+//   useEffect(() => { 
+//     GetAll();
+//  },[])
 
-const getAlldDetails = async () =>{
-  let data = await getAlldeviceDetails();
-  console.log("All ",data.data);
-  setdevice_Reg(data?.data?.content);
+
+  // let getdevices = axios.get("http://localhost:8081/api/v1/devices/getAllDevice")
+  // console.log(getdevices);
   
-}
-
-useEffect(() => { 
-  getAlldDetails();
-},[])
  
   return (
-    <div>
+    <div class="container">
    
 
-   
-    
-   {device_Reg?.map((device_Reg,index)=>{
+   {admin_Control?.map((admin_Control,index)=>{
                           return(
-
-        <div>
-    <Card style={{ width: '20rem' }}>
-      <Card.Body>
-        <center>
-        <Card.Title > {device_Reg?.deviceID_dvcReg}</Card.Title>
-        <Card.Title className = "titlebar"> 
-        {device_Reg?.parameterType_dvcReg}</Card.Title>
-        <Card.Text className = "valuebar">
-       
-        </Card.Text>
-        </center>
-      </Card.Body>
-    </Card>
-    </div>
-    
- 
-    
-   
-    )})};
+                          
+                          <Card style={{ width: '20rem' }}>
+                            <div class="box">
+                              <div class="content">     
+                                <Card.Body>
+                                  <center>
+                                  <h1 className = "title"> {admin_Control?.parameterID_ad}</h1>
+                                  <h3 className = "discription">
+                                  {admin_Control?.disc}
+                                  </h3>
+                                  </center>
+                                </Card.Body>
+                                </div>
+                            </div>
+                          </Card>
+    )})}
    
     </div>
     
