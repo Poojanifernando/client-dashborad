@@ -5,7 +5,7 @@ import {getAllcontrollerDetails} from '../Services/adminControllerService'
 import {useEffect, useState} from 'react';
 
 
-const   CardView = () => {
+const  SubCardView = () => {
 
   const [admin_Control , setadmin_Control] = useState([{"parameterID_ad":"title" , "disc": " 179"},{"parameterID_ad":"title" , "disc": " 179"},{"parameterID_ad":"title" , "disc": " 179"},{"parameterID_ad":"title" , "disc": " 179"}]);
   
@@ -55,4 +55,4 @@ const   CardView = () => {
   );
 }
 
-export default CardView;
+export default SubCardView;
