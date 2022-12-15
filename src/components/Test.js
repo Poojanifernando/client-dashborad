@@ -1,61 +1,58 @@
-import React from "react";
-import {useState ,useEffect }from 'react'
-// import {Link} from 'react-router-dom'
-import "../css/Dashboard.css";
-import {getAllDetails} from '../Services/DashboradService'
-import CardView from "./CardView";
-import SideBar from "./SideBar";
-import TopBar from "./TopBar";
-//import SideBar from "./SideBar"
-// import {
-//   Card,
-//   CardHeader,
-//   CardTitle,
-//   CardBody,
-//   Button,
-//   Col,
-//   CardImg,
-//   CardText,
-// } from "reactstrap";
-// import SideBar from "./SideBar";
+import Card from 'react-bootstrap/Card';
+import "../css/SubCardView.css";
+import axios from 'axios';
+import {getAllcontrollerDetails} from '../Services/adminControllerService'
+import {useEffect, useState} from 'react';
 
 
+const  Test = () => {
 
-const   Test = () => {
-
+  const [admin_Control , setadmin_Control] = useState([{"Machine_ID":"001" , "Parameeter": " temp"},{"Machine_ID":"001" , "disc": "temp"},{"Parameeter":"width" , "disc": "5/mm"},]);
+  
+  const [device_Reg , setdevice_Reg] = useState([]);
+  
     
-  const [machine , setmachine] = useState([]);
-    
-  const GetAllmachines = async () =>{
-    let data = await getAllDetails();
-    console.log("All products",data);
-    setmachine(data?.data?.content);
-}
-  useEffect(() => { 
-    GetAllmachines();
- },[])
-    return(
-    // <div>
-     
-    //   <div class="row">
-    //     <div class="column1"><SideBar/></div>
-    //     <div class="column2"><CardView/></div>
-    //   </div>
-    // </div>
+//   const GetAll = async () =>{
+//     let data = await getAllcontrollerDetails();
+//     console.log("All ",data);
+//     setadmin_Control(data?.data?.content);
+// }
+//   useEffect(() => { 
+//     GetAll();
+//  },[])
 
 
-    <div>
+  // let getdevices = axios.get("http://localhost:8081/api/v1/devices/getAllDevice")
+  // console.log(getdevices);
+  
+ 
+  return (
+    <div class="container">
+   
 
-      <div class="sidenav">
-        <SideBar/>
-      </div>
-      <div class="main">
-        <CardView/>
-      </div>
+   {admin_Control?.map((admin_Control,index)=>{
+                          return(
+                          
+                          <Card style={{ width: '20rem' }}>
+                            <div class="box">
+                              <div class="content">     
+                                <Card.Body>
+                                  <center>
+                                  <h1 className = "title"> {admin_Control?.parameterID_ad}</h1>
+                                  <h3 className = "discription">
+                                  {admin_Control?.disc}
+                                  </h3>
+                                  </center>
+                                </Card.Body>
+                                </div>
+                            </div>
+                          </Card>
+    )})}
+   
     </div>
+    
 
-
-    );
-};
+  );
+}
 
 export default Test;

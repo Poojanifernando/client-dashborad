@@ -51,13 +51,6 @@ const   CardView = () => {
           <td> <h2 className ='h1class'>Date :</h2></td>
         </tr>
       </table>
-      {/* <div className = 'infoCard'>
-        <h2 className ='h1class'>Job ID :</h2>
-        <h2 className ='h1class'>Customer name :</h2>
-        <h2 className ='h1class'>Batch ID :</h2>
-        <h2 className ='h1class'>Product ID :</h2>
-        <h2 className ='h1class'>Product Line :</h2>
-        </div> */}
         <br/>
    {line_reg?.map((line_reg,index)=>{
                           return(
