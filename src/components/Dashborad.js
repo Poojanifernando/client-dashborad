@@ -127,7 +127,7 @@ const   Dashborad = () => {
 </th>
 <th>
 
-
+{/*
 <div>
 {machine?.map((machine,index)=>{
                           return(
@@ -166,8 +166,8 @@ const   Dashborad = () => {
                  
                                 
                                 
-    </div>
-<div>
+                          </div>*/}
+                          <div>
                
          </div>
 

@@ -1,7 +1,7 @@
 import "../css/SideBar.css";
 import { SlUser } from "react-icons/sl"
 import { Link } from "react-router-dom";
-const   sideBar = () => {
+const   SideBar = () => {
   return (
 
     <div className="sidebar">
@@ -92,4 +92,4 @@ const   sideBar = () => {
   );
 }
 
-export default sideBar;
+export default SideBar;
