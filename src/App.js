@@ -11,13 +11,15 @@ import Addrealtimedata from './components/Addrealtimedata'
 import Charts from './components/Charts' 
 import CardView from './components/CardView' 
 import SubCardView from './components/SubCardView'   
+import Test from "./components/Test";
 
 function App() {
   return (
     <div>
+        <TopBar/>
             <Router>
                <Routes>
-
+             
                  <Route exact path="/Dashborad" element={<Dashborad/>} />  
                  <Route  path="/TopBar" element={<TopBar/>} />   
                  <Route  path="/SideBar" element={<SideBar/>} /> 
@@ -29,6 +31,7 @@ function App() {
                  <Route  path="/CardView" element={<CardView/>} />  
                     
                  <Route  path="/SubCardView" element={<SubCardView/>} />  
+                 <Route  path="/Test" element={<Test/>} />  
             </Routes>
 
 

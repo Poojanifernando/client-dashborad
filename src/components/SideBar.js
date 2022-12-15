@@ -1,5 +1,5 @@
 import "../css/SideBar.css";
-import { SlUser } from "react-icons/sl"
+// import { SlUser } from "react-icons/sl"
 import { Link } from "react-router-dom";
 const   SideBar = () => {
   return (
@@ -88,6 +88,7 @@ const   SideBar = () => {
         </div>
       </div>
     </div>
+
     
   );
 }
