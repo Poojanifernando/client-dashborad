@@ -39,28 +39,35 @@ const   CardView = () => {
  console.log(JSON. stringify(admin_Control))
   return (
     <div>
-   
-          
-
-            
-        
-
-    
-    <div>
-
-      {/*<p>Product ID:   {JSON. stringify(admin_Control)}    </p>*/}
-   
-
+      <table className = 'infoCard'>
+        <tr>
+          <td ><h2 className ='h1class'>Job ID :</h2></td>
+          <td> <h2 className ='h1class'>Customer name :</h2></td>
+          <td> <h2 className ='h1class'>Batch ID :</h2></td>
+        </tr>
+        <tr>
+          <td> <h2 className ='h1class'>Product ID :</h2></td>
+          <td> <h2 className ='h1class'>Product Line :</h2></td>
+          <td> <h2 className ='h1class'>Date :</h2></td>
+        </tr>
+      </table>
+      {/* <div className = 'infoCard'>
+        <h2 className ='h1class'>Job ID :</h2>
+        <h2 className ='h1class'>Customer name :</h2>
+        <h2 className ='h1class'>Batch ID :</h2>
+        <h2 className ='h1class'>Product ID :</h2>
+        <h2 className ='h1class'>Product Line :</h2>
+        </div> */}
+        <br/>
    {line_reg?.map((line_reg,index)=>{
                           return(
                         
-    
-    <div style={{ width: '200rem'}} className = 'cardborder'>
+    <div className='paddingtocard'>
+     
     <Card >
-   
       <Card.Body>
         <Card.Title className='cardheader'><b className='titlebarmachine'>Stapping Machine  -  {line_reg?.machineID_ad}</b></Card.Title>
-        <Card.Text>
+        {/* <Card.Text>
           <span>Machine ID:      </span>
           <span>Product ID:   {line_reg?.productID_ad}   </span>
           <span>Product Line ID:   {line_reg?.productLineID_ad}   </span>
@@ -73,32 +80,21 @@ const   CardView = () => {
           <span>Parameter2:   {admin_Control?.parameterID_ad}   </span>
           <span>Parameter3:   {admin_Control?.parameterID_ad} </span>
          
-        </Card.Text>
+        </Card.Text> */}
 
 
 
         <div>
-    {/* <Card style={{ width: '20rem' }}>
-      <Card.Body>
-        <center>
-        <Card.Title className = "titlebar"> {admin_Control?.parameterID_ad}</Card.Title>
-        <Card.Text className = "valuebar">
-       
-        </Card.Text>
-        </center>
-      </Card.Body>
-    </Card> */}
     <SubCardView/>
     </div>
-   
-    
       </Card.Body>
     </Card>
+    
     </div>
+
+   
   
-    )})};
-  
-    </div>
+    )})}
    
     </div>
    

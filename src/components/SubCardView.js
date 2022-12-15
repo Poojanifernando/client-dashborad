@@ -7,7 +7,7 @@ import {useEffect, useState} from 'react';
 
 const  SubCardView = () => {
 
-  const [admin_Control , setadmin_Control] = useState([{"parameterID_ad":"TEMP" , "disc": " 30/F"},{"parameterID_ad":"height" , "disc": "700/m"},{"parameterID_ad":"width" , "disc": "5/mm"}]);
+  const [admin_Control , setadmin_Control] = useState([{"parameterID_ad":"TEMP" , "disc": " 30/F"},{"parameterID_ad":"height" , "disc": "700/m"},{"parameterID_ad":"width" , "disc": "5/mm"},]);
   
   const [device_Reg , setdevice_Reg] = useState([]);
   

@@ -15,9 +15,9 @@
 .cardborder{
     border-radius:30px;
     border-color: #00D100;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px;
     margin-left: 300px;
-    margin-right: 100px;
+    margin-right: 100px; */
     display: flex;
    
 
@@ -27,9 +27,6 @@
 .cardheader{
     background-color: #00D100;
     height: 80px;
-    
-    
-
 }
 
 .titlebarmachine{
@@ -41,3 +38,24 @@
     color: aliceblue;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.cardborder{
+    width: fit-content;
+}
+.infoCard{
+    width: 100%;
+    background-color: #150259;
+}
+.h1class{
+    color: aliceblue;
+    font-size:25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paddingtocard{
+    padding-top: 20px;
+}
+td{
+    padding: 10px;
+}
+
+

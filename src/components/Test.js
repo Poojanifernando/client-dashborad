@@ -5,7 +5,6 @@ import "../css/Dashboard.css";
 import {getAllDetails} from '../Services/DashboradService'
 import CardView from "./CardView";
 import SideBar from "./SideBar";
-import Test from "./Test";
 import TopBar from "./TopBar";
 //import SideBar from "./SideBar"
 // import {
@@ -22,7 +21,7 @@ import TopBar from "./TopBar";
 
 
 
-const   Dashborad = () => {
+const   Test = () => {
 
     
   const [machine , setmachine] = useState([]);
@@ -36,29 +35,27 @@ const   Dashborad = () => {
     GetAllmachines();
  },[])
     return(
-    <div>
+    // <div>
      
-      <div class="row">
-        <div class="column1"><SideBar/></div>
-        <div class="column2"><CardView/></div>
+    //   <div class="row">
+    //     <div class="column1"><SideBar/></div>
+    //     <div class="column2"><CardView/></div>
+    //   </div>
+    // </div>
+
+
+    <div>
+
+      <div class="sidenav">
+        <SideBar/>
+      </div>
+      <div class="main">
+        <CardView/>
       </div>
     </div>
 
 
-    // <div>
-    //   <TopBar/>
-  
-    //     <div class="sidenav">
-    //       <SideBar/>
-    //     </div>
-
-
-    //   <div class="main">
-    //     <CardView/>
-    //   </div>
-    // </div>
-
     );
 };
 
-export default Dashborad;
+export default Test;
