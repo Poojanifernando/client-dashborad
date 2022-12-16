@@ -21,7 +21,7 @@
 }
 
 .lalantitle{
-    font-size:50px;
+    font-size:30px;
     color:'darkblue';
     
 
@@ -29,4 +29,15 @@
 
 .font-color{
     color: rgb(255, 255, 255);
+}
+img {
+    border-radius: 50%;
+  }
+
+.nav-link{
+    color: rgb(255, 255, 255);
+}
+.nav-item:hover{
+    background-color: rgb(240, 240, 255);
+    border-radius: 10px;
 }

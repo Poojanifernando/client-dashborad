@@ -2,6 +2,7 @@
 import React,{} from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 //import ProductRegistration from "./components/ProductRegistration";
 import Dashborad from './components/Dashborad'  
 import TopBar from './components/TopBar'  
@@ -14,13 +15,16 @@ import SubCardView from './components/SubCardView'
 import Test from "./components/Test";
 
 function App() {
+
   return (
-    <div>
+    <div  style={{
+      backgroundColor: '#E4E4E4',
+    }}>
         <TopBar/>
             <Router>
                <Routes>
              
-                 <Route exact path="/Dashborad" element={<Dashborad/>} />  
+                 <Route exact path="/Dashboard" element={<Dashborad/>} />  
                  <Route  path="/TopBar" element={<TopBar/>} />   
                  <Route  path="/SideBar" element={<SideBar/>} /> 
                  <Route  path="/FeatueredInfor" element={<FeatueredInfor/>} />   

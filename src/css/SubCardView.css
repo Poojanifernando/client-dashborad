@@ -55,7 +55,7 @@ body .container .card .box {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  background: #0f35e0;
+  background: rgba(89, 220, 19);
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -128,11 +128,10 @@ body .container .card .box .content a:hover {
 .title{
     padding: 8px 20px;
     color: white;
-    font-size: xxx-large;
+    /* font-size: xxx-large; */
 }
 .discription{
-
     padding: 8px 20px;
     color: white;
-    font-size: 160px;
+    /* font-size: 160px; */
 }

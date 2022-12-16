@@ -25,9 +25,10 @@
 }
 
 .cardheader{
-    background-color: rgb(52, 51, 51);
+    /* background-color: rgb(49, 125, 218); */
+    background-color: rgb(220, 220, 220);
     height: 50px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .titlebarmachine{
@@ -38,20 +39,23 @@
     height:70px;
     align-items: center;
     font-size:30px;
-    color: aliceblue;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(4, 4, 4);
+    font-family: Roboto, OpenSans, Lato;
+    font-weight: bold;
 }
 .cardborder{
     width: fit-content;
 }
 .infoCard{
     width: 100%;
-    background-color: #616161;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 15px;
 }
 .h1class{
-    color: aliceblue;
+    color: rgb(3, 3, 3);
     font-size:20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Roboto, OpenSans, Lato;
+    font-weight: bold;
 }
 
 .paddingtocard{
@@ -59,6 +63,13 @@
 }
 td{
     padding: 10px;
+}
+
+.dashboardText{
+    padding-left: 10px;
+    font-family:Roboto, OpenSans, Lato;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 
