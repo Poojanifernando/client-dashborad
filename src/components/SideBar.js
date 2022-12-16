@@ -12,19 +12,15 @@ const   SideBar = () => {
           <h2 className="sidebarTitle">Dashboard</h2>
           <ul className="sidebarList">
             <Link to="/" className="link">
-            <li className="sidebarListItem active">
-            
+            <li className="sidebarListItem">
               Home
             </li>
             </Link>
-            <br/>
+            <Link to="/Dashboard" className="link">
             <li className="sidebarListItem">
-            Dashboards 
-           
+            Dashboard
             </li>
-            <li className="sidebarListItem">
-             
-            </li>
+            </Link>
           </ul>
         </div>
         <div className="sidebarMenu">
@@ -42,31 +38,36 @@ const   SideBar = () => {
                 Products
               </li>
             </Link>
-            <li className="sidebarListItem">
-             
+            <Link to="/Transactions" className="link">
+              <li className="sidebarListItem">
               Transactions
-            </li>
-            <li className="sidebarListItem">
-             
+              </li>
+            </Link>
+            <Link to="/ Reports" className="link">
+              <li className="sidebarListItem">
               Reports
-            </li>
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-    
+          <Link to="/Mail" className="link">
+              <li className="sidebarListItem">
               Mail
-            </li>
-            <li className="sidebarListItem">
-           
+              </li>
+            </Link>
+            <Link to="/Feedback" className="link">
+              <li className="sidebarListItem">
               Feedback
-            </li>
-            <li className="sidebarListItem">
-              
+              </li>
+            </Link>
+            <Link to="/Messages" className="link">
+              <li className="sidebarListItem">
               Messages
-            </li>
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="sidebarMenu">

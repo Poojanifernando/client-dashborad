@@ -33,15 +33,15 @@ const  SubCardView = () => {
    {admin_Control?.map((admin_Control,index)=>{
                           return(
                           
-                          <Card style={{ width: '20rem' }}>
+                          <Card style={{ width: '10rem' }}>
                             <div class="box">
                               <div class="content">     
                                 <Card.Body>
                                   <center>
-                                  <h1 className = "title"> {admin_Control?.parameterID_ad}</h1>
-                                  <h3 className = "discription">
+                                  <h3 className = "title"> {admin_Control?.parameterID_ad}</h3>
+                                  <h1 className = "discription">
                                   {admin_Control?.disc}
-                                  </h3>
+                                  </h1>
                                   </center>
                                 </Card.Body>
                                 </div>

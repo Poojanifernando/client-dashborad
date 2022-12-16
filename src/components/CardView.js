@@ -39,6 +39,7 @@ const   CardView = () => {
  console.log(JSON. stringify(admin_Control))
   return (
     <div>
+      <p className='dashboardText'><u> Dashboard. </u></p>
       <table className = 'infoCard'>
         <tr>
           <td ><h2 className ='h1class'>Job ID :</h2></td>
