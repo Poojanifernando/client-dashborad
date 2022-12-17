@@ -44,20 +44,6 @@ const   Dashborad = () => {
       </div>
     </div>
 
-
-    // <div>
-    //   <TopBar/>
-  
-    //     <div class="sidenav">
-    //       <SideBar/>
-    //     </div>
-
-
-    //   <div class="main">
-    //     <CardView/>
-    //   </div>
-    // </div>
-
     );
 };
 
