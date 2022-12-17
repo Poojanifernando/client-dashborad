@@ -1,46 +1,45 @@
 import React, { useState, useEffect } from 'react'
-import "../../css/Form.css";
 import { Link, useNavigate } from "react-router-dom";
 
 
-const AddProductLine = () => {
+const JobRegistration = () => {
 
 
     return (
         <div>
             <div className='before'>
-                <h1 className='Title'>Product Line Registration</h1>
+                <h1 className='Title'>Job Registration</h1>
             </div>
             <div className='aa'>
                 <form className='bb card'>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="ProductLineID">Product Line  ID  : </label><br />
-                            <input type="text" class="inputTypes" placeholder="Product Line  ID" />
+                            <label for="JobID">Job  ID  :</label><br />
+                            <input type="text" class="inputTypes" placeholder="Job ID" />
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputPassword4">Product Line Description  :</label><br />
-                            <textarea type="text" class="inputTypes" placeholder="Product Line Description" />
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="ProductLineName">Product Line Name  :</label><br />
-                            <input type="text" class="inputTypes" placeholder="Product Line Name" />
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="ProductLineImage">Product Line Image  :</label><br />
-                            <input type="file" class="inputTypes" />
+                            <label for="JobDescription">Job Description  :</label><br />
+                            <textarea type="text" class="inputTypes" placeholder="Job Description" />
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="StartTime">Start Time  :</label><br />
-                            <input type="time" class="inputTypes" />
+                            <label for="JobName">Job Name  :</label><br />
+                            <input type="text" class="inputTypes" placeholder="Job Name" />
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="EndTime">End Time :</label><br />
-                            <input type="time" class="inputTypes" />
+                            <label for="CustomerName">Customer Name  :  :</label><br />
+                            <input type="text" class="inputTypes" placeholder="Customer Name" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="ProductName">Product Name  :</label><br />
+                            <input type="text" class="inputTypes" placeholder="Product Name" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="ProductCount">Product Count :</label><br />
+                            <input type="number" class="inputTypes" placeholder="Product Count" />
                         </div>
                     </div>
                     <div className='outer'>
@@ -55,4 +54,4 @@ const AddProductLine = () => {
     )
 }
 
-export default AddProductLine;
+export default JobRegistration;

@@ -1,0 +1,57 @@
+.Title{
+    font-family: 'revert';
+    color: white;
+    background-color: '#000C66';
+    font-weight: bold;
+    background-color:#000C66;
+     border-radius: 20px;
+     display: inline;
+     padding: 1%;
+
+}
+.before{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center; 
+}
+.aa{
+    text-align: center;
+    padding-bottom: 15px;
+  
+}
+.bb{
+    display: inline-block;
+    /* background-color: #000000; */
+    /* width: fit-content; */
+}
+
+  .inputTypes{
+    background-color:#B2BEB5;
+    border-radius:20px;
+    width:350px;
+    height:50px;
+  }
+
+  .cansalBTN{
+    border-Radius: 20px;
+    width: 200px;
+    background-color: #B2BEB5;
+  }
+  .saveBTN{
+    align-content: center;
+    border-Radius:20px;
+    width: 200px;
+    background-color: #000C66;
+  }
+  .outer{
+    text-align: center;
+    padding-bottom: 15px;
+
+  }
+  .inner{
+    display: inline;    
+  }
+  .card{
+    padding: 20px;
+    border-radius: 25px;
+  }

@@ -15,6 +15,17 @@ import SubCardView from './components/SubCardView'
 import Test from "./components/Test";
 import ViewProductLine from "./components/ProductLine/ViewProductLine";
 import AddProductLine from "./components/ProductLine/AddProductLine";
+import AddProductRegistration from "./components/ProductLine/AddProductRegistration";
+import ViewProductRegistration from "./components/ProductLine/ViewProductRegistration";
+import DeviceRegistration from "./components/Device/DeviceRegistration";
+import ViewDeviceRegistraion from "./components/Device/ViewDeviceRegistraion";
+import Viewjob from "./components/Job/Viewjob";
+import JobRegistration from "./components/Job/JobRegistration";
+import ViewMachine from "./components/Machine/ViewMachine";
+import MachineRegister from "./components/Machine/MachineRegister";
+import ViewParameters from "./components/Parameter/ViewParameters";
+import AddParameter from "./components/Parameter/AddParameter";
+import UserRegister from "./components/User/UserRegister";
 
 function App() {
 
@@ -35,6 +46,17 @@ function App() {
                  <Route  path="/SubCardView" element={<SubCardView/>} />  
                  <Route  path="/ViewProductLine" element={<ViewProductLine/>} />  
                  <Route  path="/AddProductLine" element={<AddProductLine/>} />  
+                 <Route  path="/AddProductRegistration" element={<AddProductRegistration/>} />
+                 <Route  path="/ViewProductRegistration" element={<ViewProductRegistration/>} />   
+                 <Route  path="/DeviceRegistration" element={<DeviceRegistration/>} />   
+                 <Route  path="/ViewDeviceRegistraion" element={<ViewDeviceRegistraion/>} /> 
+                 <Route  path="/ViewJob" element={<Viewjob/>} />
+                 <Route  path="/JobRegistration" element={<JobRegistration/>} /> 
+                 <Route  path="/ViewMachine" element={<ViewMachine/>} /> 
+                 <Route  path="/MachineRegister" element={<MachineRegister/>} /> 
+                 <Route  path="/ViewParameters" element={<ViewParameters/>} /> 
+                 <Route  path="/AddParameter" element={<AddParameter/>} /> 
+                 <Route  path="/UserRegister" element={<UserRegister/>} /> 
             </Routes>
 
 
