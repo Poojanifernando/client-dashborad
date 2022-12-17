@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import DeviceRegistration from './DeviceRegistration';
+import "../../css/Table.css"
 
 const ViewDeviceRegistraion = () => {
 
@@ -8,10 +9,10 @@ const ViewDeviceRegistraion = () => {
     return (
         <div>
             <DeviceRegistration/>
-            <div style={{ textAlign: "center" }}>
+            <div>
                 <div>
                     <div >
-                        <table className="table table-bordered" style={{ border: '3px', borderColor: '#000C66', color: '#000C66', borderStyle: 'groove' }}>
+                        <table className="table table-bordered tablestyle" >
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -22,7 +23,6 @@ const ViewDeviceRegistraion = () => {
                                     <th>Product Name</th>
                                     <th>Product Count</th>
                                     <th>Update/Delete</th>
-
                                 </tr>
                             </thead>
                             {/*  <tbody>

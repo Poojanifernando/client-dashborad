@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import MachineRegister from './MachineRegister';
-
+import "../../css/Table.css"
 
 const ViewMachine = () => {
 
@@ -12,7 +12,7 @@ const ViewMachine = () => {
             <div style={{ textAlign: "center" }}>
                 <div>
                     <div >
-                        <table className="table table-bordered" style={{ borderColor: '#000C66', color: '#000C66' }}>
+                        <table className="table table-bordered tablestyle" >
                             <thead>
                                 <tr>
                                     <th>#</th>
