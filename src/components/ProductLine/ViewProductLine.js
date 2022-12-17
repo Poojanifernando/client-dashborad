@@ -1,38 +1,30 @@
-import React, {useState, useEffect} from 'react'
-import {  Link ,useNavigate  } from "react-router-dom";
+import React, { useState, useEffect } from 'react'
+import { Link, useNavigate } from "react-router-dom";
 import AddProductLine from './AddProductLine';
-
+import "../../css/Table.css"
 
 const ViewProductLine = () => {
 
 
-    return(
- <div>
-    <AddProductLine/>
-
-<div style={{ textAlign: "center" }}>
-             
-        
-             <div>
-                 <div >
-                    
-                     <center >
-                    
-                     </center>
-                     <table className = "table table-bordered" style={{borderColor: '#000C66', color:'#000C66'}}>
-                         <thead>
-                             <tr>
-                             <th>#</th>
-                             <th>Product Line ID</th>
-                             <th>Product Line Description</th>
-                             <th>Product Line Name</th>
-                             <th>Product Line Image</th>
-                             <th>Start Time</th>
-                             <th>End Time</th>
-                         
-                             </tr>
-                         </thead>  
-                       {/*  <tbody>
+    return (
+        <div>
+            <AddProductLine />
+            <div>
+                <div>
+                    <div >
+                        <table className="table table-bordered tablestyle" >
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Product Line ID</th>
+                                    <th>Product Line Description</th>
+                                    <th>Product Line Name</th>
+                                    <th>Product Line Image</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                </tr>
+                            </thead>
+                            {/*  <tbody>
                              {product.map((product,index)=>(
                                  <tr key={index}>
                                      <th scope="row">{index+1}</th>
@@ -55,11 +47,11 @@ const ViewProductLine = () => {
                                  </tr>
                              ))}
                              </tbody>*/}
-                     </table>
-                 </div>
-             </div>
-         </div>          
-</div>           
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 

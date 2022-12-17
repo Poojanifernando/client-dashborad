@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import AddParameter from './AddParameter';
-
+import "../../css/Table.css"
 
 const ViewParameters = () => {
 
@@ -9,10 +9,10 @@ const ViewParameters = () => {
     return (
         <div>
             <AddParameter/>
-            <div style={{ textAlign: "center" }}>
+            <div >
                 <div>
                     <div >
-                        <table className="table table-bordered" style={{ borderColor: '#000C66', color: '#000C66' }}>
+                        <table className="table table-bordered tablestyle">
                             <thead>
                                 <tr>
                                     <th>#</th>

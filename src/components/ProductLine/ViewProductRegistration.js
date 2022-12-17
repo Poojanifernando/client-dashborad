@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 // import {createProduct , DeleteProductById, getAllProducts} from "../Services/ProductServices";
 // import axios from 'axios';
 // import ImageUploading from "react-images-uploading"
-
+import "../../css/Table.css"
 
 
 
@@ -103,16 +103,11 @@ const ViewProductRegistration = () => {
 
     return (
         <div>
-            <div style={{ textAlign: "center" }}>
-
-
+            <div>
                 <div>
                     <div>
-
                         <center>
-
-
-                            <table className="table table-bordered" style={{ border: '5px', borderColor: '#000C66', color: '#000C66', borderStyle: 'groove', width: '1400px' }}>
+                            <table className="table table-bordered tablestyle">
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -121,7 +116,6 @@ const ViewProductRegistration = () => {
                                         <th>Product Name</th>
                                         <th>Product Image</th>
                                         <th>Update/Delete</th>
-
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -132,8 +126,6 @@ const ViewProductRegistration = () => {
                                             <td>{product?.productDescription}</td>
                                             <td>{product?.productName}</td>
                                             <td>{product?.productImage}</td>
-
-
                                             <td>
                                                 <Link to={{ pathname: `/UpdateProduct/${product.productID}` }}>
                                                     <button type="button" className="btn btn-primary" style={{ marginTop: '10px', backgroundColor: '#000C66' }} >
@@ -143,9 +135,7 @@ const ViewProductRegistration = () => {
                                                     //   onClick={()=>deleteProduct(product.productID)}
                                                     className="btn btn-danger" style={{ marginTop: '10px' }} >
                                                     <i className="far fa-trash-alt"> </i>&nbsp;Delete </button>
-
                                             </td>
-
                                         </tr>
                                     ))}
                                 </tbody>
