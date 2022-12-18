@@ -26,6 +26,8 @@ import MachineRegister from "./components/Machine/MachineRegister";
 import ViewParameters from "./components/Parameter/ViewParameters";
 import AddParameter from "./components/Parameter/AddParameter";
 import UserRegister from "./components/User/UserRegister";
+import Register from "./components/User/Register";
+import Login from "./components/User/Login";
 
 function App() {
 
@@ -57,6 +59,8 @@ function App() {
                  <Route  path="/ViewParameters" element={<ViewParameters/>} /> 
                  <Route  path="/AddParameter" element={<AddParameter/>} /> 
                  <Route  path="/UserRegister" element={<UserRegister/>} /> 
+                 <Route  path="/Register" element={<Register/>} /> 
+                 <Route  path="/Login" element={<Login/>} /> 
             </Routes>
 
 

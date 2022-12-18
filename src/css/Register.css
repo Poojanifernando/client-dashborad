@@ -1,0 +1,98 @@
+.backgroundcolorReg{
+  background-image: url("../images/test.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+h1{
+  padding-top: 100px;
+}
+.form-row{
+  padding-top: 30px;
+}
+.Titlereg{
+  font-family: 'revert';
+  color: white;
+  background-color: '#000C66';
+  font-weight: bold;
+  background-color:#000C66;
+   border-radius: 20px;
+   display: inline;
+   padding: 5%;
+   
+}
+
+.topreg{
+  text-align: center;
+  padding-bottom: 15px;
+
+}
+.secondreg{
+  display: inline-block;
+  /* background-color: #000000; */
+  /* width: fit-content; */
+
+  border: 10px;
+  border-color: #a2a5b0;
+  color: #a4a5af;
+  border-style: groove;
+  width: 450px;
+}
+.paddingToTop{
+  padding-top: 20px;
+}
+.inputTypesreg{
+  background-color:#B2BEB5;
+  border-radius:20px;
+  width:350px;
+  height:50px;
+}
+
+.link{
+  border-Radius: 20px;
+  width: 200px;
+  background-color: #B2BEB5;
+}
+.saveBTN{
+  font-family: 'revert';
+  color: white;
+  font-weight: bold;
+  background-color:#157604;
+   border-radius: 20px;
+   border: none;
+   display: inline;
+   padding: 1%;
+   padding: 10px;
+}
+.link{
+  font-family: 'revert';
+  color: rgb(25, 0, 255);
+  font-weight: bold;
+  /* background-color:#3c00ff; */
+   /* border-radius: 20px; */
+   border: none;
+   display: inline;
+   padding: 1%;
+   padding: 10px;
+   right: 0;
+}
+.cardreg{
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #ececec;
+}
+.roreg{
+  padding-top: 10px;
+}
+.newrowreg{
+  padding-top: 10px;
+  width: 100%;
+  color: #000C66;
+}
+.toppaddingreg{
+  padding-top:10px ;
+}
