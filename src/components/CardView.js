@@ -3,7 +3,7 @@ import "../css/CardView.css";
 //import {getAllcontrollerDetails} from '../Services/adminControllerService'
 import {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
-import SubCardView from './SubCardView';
+import DashboardDeviceView from './DashboardDeviceView';
 //import {getlineeDetails} from '../Services/ProductionLineService'
 import {getAllDetails} from '../Services/DashboradService'
 
@@ -17,17 +17,19 @@ const   CardView = () => {
 
   // const [id , setid] = useState([]);
 
-  //set useState for machine ids
-  const [lm_table , setlm_table] = useState([]);
+
+  //set machines to the variables
+  const [machines , setMachines] = useState([]);
 
 //get machine ids for one product line
 
   const Getmachinesids = async() =>{
     let data = await getAllDetails();
-    console.log("machine ids for one line",JSON. stringify(data.data));
-    setlm_table(data?.data?.content);
-
+    // console.log("machine ids for one line",JSON. stringify(data.data));
+    setMachines(data?.data);
   }
+  console.log("machine",machines);
+
   // const Getmachines = async() =>{
   //   let data = await getlineeDetails();
   //   console.log("machine ",JSON. stringify(data.data));
@@ -68,12 +70,12 @@ const   CardView = () => {
    
                         
     <div className='paddingtocard'>
-    {lm_table?.map((lm_table,index)=>{
+    {machines?.map((machines,index)=>{
                           return(
      
-    <Card >
+    <Card className='padingto'>
       <Card.Body>
-        <Card.Title className='cardheader'><b className='titlebarmachine'>Stapping Machine  -  {lm_table?.machineID}</b></Card.Title>
+        <Card.Title className='cardheader'><b className='titlebarmachine'>Stapping Machine  -  {machines?.machineID}</b></Card.Title>
         {/* <Card.Text>
           <span>Machine ID:      </span>
           <span>Product ID:   {line_reg?.productID_ad}   </span>
@@ -92,9 +94,10 @@ const   CardView = () => {
 
 
         <div>
-        <SubCardView/>
+        <DashboardDeviceView/>
     </div>
       </Card.Body>
+      
     </Card>
     
 
@@ -102,6 +105,7 @@ const   CardView = () => {
    
   
     )})}
+  
         </div>
    
     </div>

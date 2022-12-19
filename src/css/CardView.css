@@ -59,7 +59,8 @@
 }
 
 .paddingtocard{
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 td{
     padding: 10px;
@@ -71,5 +72,6 @@ td{
     font-size: 20px;
     font-weight: lighter;
 }
-
-
+.padingto{
+    margin: 10px;
+}
