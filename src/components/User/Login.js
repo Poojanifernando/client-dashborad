@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
 import "../../css/Login.css";
-// import { useHistory } from "react-router-dom";
 
 
 
 const Login = () => {
-    // const history = useHistory();
+    const history = useNavigate();
 
     const goto = (e) => {
         e.preventDefault();
-        // history.push('/admin');
+        history('/Register');
     }
 
+    const login =(e)=>{
+        e.preventDefault();
+        history('/Dashboard');
+    }
 
     return (
 
@@ -31,7 +34,7 @@ const Login = () => {
                         <input type="password" class="inputTypes" placeholder="Password" />
                     </div>
                     <div class="roLogin">
-                        <button className="saveBTN" type="submit" >Login </button>
+                        <button className="saveBTN" type="submit" onClick={login} >Login </button>
                     </div>
                     <div class="roLogin">
                         <button className="link" type="submit" onClick={goto}>Create an Account </button>

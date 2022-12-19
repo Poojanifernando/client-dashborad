@@ -1,6 +1,6 @@
 
 import React,{} from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route ,useHistory} from "react-router-dom";
 
 
 //import ProductRegistration from "./components/ProductRegistration";
@@ -25,7 +25,6 @@ import ViewMachine from "./components/Machine/ViewMachine";
 import MachineRegister from "./components/Machine/MachineRegister";
 import ViewParameters from "./components/Parameter/ViewParameters";
 import AddParameter from "./components/Parameter/AddParameter";
-import UserRegister from "./components/User/UserRegister";
 import Register from "./components/User/Register";
 import Login from "./components/User/Login";
 
@@ -38,7 +37,7 @@ function App() {
         <TopBar/>
             <Router>
                <Routes>
-                 <Route exact path="/Dashborad" element={<Dashborad/>} />  
+                 <Route exact path="/Dashboard" element={<Dashborad/>} />  
                  <Route  path="/TopBar" element={<TopBar/>} />   
                  <Route  path="/SideBar" element={<SideBar/>} /> 
                  <Route  path="/FeatueredInfor" element={<FeatueredInfor/>} />   
@@ -58,7 +57,6 @@ function App() {
                  <Route  path="/MachineRegister" element={<MachineRegister/>} /> 
                  <Route  path="/ViewParameters" element={<ViewParameters/>} /> 
                  <Route  path="/AddParameter" element={<AddParameter/>} /> 
-                 <Route  path="/UserRegister" element={<UserRegister/>} /> 
                  <Route  path="/Register" element={<Register/>} /> 
                  <Route  path="/Login" element={<Login/>} /> 
             </Routes>

@@ -32,6 +32,7 @@ h1{
 .top{
     text-align: center;
     padding-bottom: 15px;
+    padding-top: 20px;
   
 }
 .second{
@@ -91,7 +92,7 @@ h1{
   .card1{
     padding: 25px;
     border-radius: 25px;
-   background-color: #4e5dff;
+   background-color: #f8f8f8;
   }
   .roLogin{
     padding-top: 10px;
