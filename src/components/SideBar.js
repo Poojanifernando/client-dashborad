@@ -11,12 +11,12 @@ const   SideBar = () => {
           
           <h2 className="sidebarTitle">Dashboard</h2>
           <ul className="sidebarList">
-            <Link to="/" className="link">
+            <Link to="/" className="linktothesidebar">
             <li className="sidebarListItem">
               Home
             </li>
             </Link>
-            <Link to="/Dashboard" className="link">
+            <Link to="/Dashboard" className="linktothesidebar">
             <li className="sidebarListItem">
             Dashboard
             </li>
@@ -26,24 +26,24 @@ const   SideBar = () => {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <Link to="/users" className="link">
+            <Link to="/users" className="linktothesidebar">
               <li className="sidebarListItem">
               
                 Users
               </li>
             </Link>
-            <Link to="/products" className="link">
+            <Link to="/products" className="linktothesidebar">
               <li className="sidebarListItem">
              
                 Products
               </li>
             </Link>
-            <Link to="/Transactions" className="link">
+            <Link to="/Transactions" className="linktothesidebar">
               <li className="sidebarListItem">
               Transactions
               </li>
             </Link>
-            <Link to="/ Reports" className="link">
+            <Link to="/ Reports" className="linktothesidebar">
               <li className="sidebarListItem">
               Reports
               </li>
@@ -53,17 +53,17 @@ const   SideBar = () => {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
-          <Link to="/Mail" className="link">
+          <Link to="/Mail" className="linktothesidebar">
               <li className="sidebarListItem">
               Mail
               </li>
             </Link>
-            <Link to="/Feedback" className="link">
+            <Link to="/Feedback" className="linktothesidebar">
               <li className="sidebarListItem">
               Feedback
               </li>
             </Link>
-            <Link to="/Messages" className="link">
+            <Link to="/Messages" className="linktothesidebar">
               <li className="sidebarListItem">
               Messages
               </li>
