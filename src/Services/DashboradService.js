@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let getDetails = "http://localhost:8081/api/v1/machine/getAllMachine"
+let getDetails = "http://localhost:8081/api/v1/MachineLineTest/getalltests"
 let CreateURL = "http://localhost:8081/api/v1/machine/saveMachine"
 
 

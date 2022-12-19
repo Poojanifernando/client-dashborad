@@ -1,42 +1,54 @@
 import Card from 'react-bootstrap/Card';
 import "../css/CardView.css";
-import {getAllcontrollerDetails} from '../Services/adminControllerService'
+//import {getAllcontrollerDetails} from '../Services/adminControllerService'
 import {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import SubCardView from './SubCardView';
-import {getlineeDetails} from '../Services/ProductionLineService'
+//import {getlineeDetails} from '../Services/ProductionLineService'
+import {getAllDetails} from '../Services/DashboradService'
 
 
 
 const   CardView = () => {
 
-  const [admin_Control , setadmin_Control] = useState([]);
+  // const [admin_Control , setadmin_Control] = useState([]);
   
-  const [line_reg , setline_reg] = useState([]);
+  // const [line_reg , setline_reg] = useState([]);
 
-  const [id , setid] = useState([]);
+  // const [id , setid] = useState([]);
 
+  //set useState for machine ids
+  const [lm_table , setlm_table] = useState([]);
 
+//get machine ids for one product line
 
-  const Getmachines = async() =>{
-    let data = await getlineeDetails();
-    console.log("machine ",JSON. stringify(data.data));
-    setline_reg(data?.data?.content);
+  const Getmachinesids = async() =>{
+    let data = await getAllDetails();
+    console.log("machine ids for one line",JSON. stringify(data.data));
+    setlm_table(data?.data?.content);
 
   }
+  // const Getmachines = async() =>{
+  //   let data = await getlineeDetails();
+  //   console.log("machine ",JSON. stringify(data.data));
+  //   setline_reg(data?.data?.content);
+
+  // }
     
-  const GetAll = async () =>{
-    let data = await getAllcontrollerDetails();
-    console.log("All ",JSON. stringify(data.data));
-    setadmin_Control(data?.data?.content);
-}
+//   const GetAll = async () =>{
+//     let data = await getAllcontrollerDetails();
+//     console.log("All ",JSON. stringify(data.data));
+//     setadmin_Control(data?.data?.content);
+// }
   useEffect(() => { 
-    GetAll();
-    Getmachines();
+    // GetAll();
+    // Getmachines();
+    Getmachinesids()
  },[])
 
 
- console.log(JSON. stringify(admin_Control))
+//  console.log(JSON. stringify(admin_Control))
+//  console.log(JSON. stringify(lm_table))
   return (
     <div>
       <p className='dashboardText'><u> Dashboard. </u></p>
@@ -53,14 +65,15 @@ const   CardView = () => {
         </tr>
       </table>
         <br/>
-   {line_reg?.map((line_reg,index)=>{
-                          return(
+   
                         
     <div className='paddingtocard'>
+    {lm_table?.map((lm_table,index)=>{
+                          return(
      
     <Card >
       <Card.Body>
-        <Card.Title className='cardheader'><b className='titlebarmachine'>Stapping Machine  -  {line_reg?.machineID_ad}</b></Card.Title>
+        <Card.Title className='cardheader'><b className='titlebarmachine'>Stapping Machine  -  {lm_table?.machineID}</b></Card.Title>
         {/* <Card.Text>
           <span>Machine ID:      </span>
           <span>Product ID:   {line_reg?.productID_ad}   </span>
@@ -79,16 +92,17 @@ const   CardView = () => {
 
 
         <div>
-    <SubCardView/>
+        <SubCardView/>
     </div>
       </Card.Body>
     </Card>
     
-    </div>
+
 
    
   
     )})}
+        </div>
    
     </div>
    
