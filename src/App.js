@@ -27,6 +27,7 @@ import ViewParameters from "./components/Parameter/ViewParameters";
 import AddParameter from "./components/Parameter/AddParameter";
 import Register from "./components/User/Register";
 import Login from "./components/User/Login";
+import DashboardDeviceView from "./components/DashboardDeviceView";
 
 function App() {
 
@@ -59,6 +60,7 @@ function App() {
                  <Route  path="/AddParameter" element={<AddParameter/>} /> 
                  <Route  path="/Register" element={<Register/>} /> 
                  <Route  path="/Login" element={<Login/>} /> 
+                 <Route  path="/DashboardDeviceView" element={<DashboardDeviceView/>} /> 
             </Routes>
 
 
