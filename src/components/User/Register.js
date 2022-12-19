@@ -7,6 +7,13 @@ import "../../css/Register.css";
 
 const Register = () => {
 
+    const history = useNavigate();
+
+    const signin =(e)=>{
+        e.preventDefault();
+        history('/login');
+    }
+
 
     return (
 
@@ -48,11 +55,9 @@ const Register = () => {
                     </div>
 
                     <div class="roreg">
-                        <button className="saveBTN" type="submit" >Login </button>
+                        <button className="saveBTN" type="submit" onClick={signin}>Sign-In</button>
                     </div>
-                    <div class="roreg">
-                        <button className="link" type="submit" >Create an Account </button>
-                    </div>
+                
                 </form>
             </div>
         </div>
